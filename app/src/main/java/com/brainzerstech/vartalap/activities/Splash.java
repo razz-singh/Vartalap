@@ -35,7 +35,7 @@ public class Splash extends AppCompatActivity {
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference myRef = database.getReference("VUsers");
                     myRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserToken").setValue(FirebaseInstanceId.getInstance().getToken());
-                    startActivity(new Intent(Splash.this, TabbedActivity.class));
+                    startActivity(new Intent(Splash.this, ProfileActivity.class));
                     finish();
                 }
                 else{
