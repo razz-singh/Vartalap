@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "397967199401",
+    "firebase_url": "https://phoneauth-4fd5e.firebaseio.com",
+    "project_id": "phoneauth-4fd5e",
+    "storage_bucket": "phoneauth-4fd5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397967199401:android:4cde982c15e8f9cd",
+        "android_client_info": {
+          "package_name": "com.brainzerstech.vartalap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397967199401-30ocicc9b9b6q30ennac3m77p91cdb40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjudHQb1EH7sABwj1SUdTXE8ZpyTG3ye8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
