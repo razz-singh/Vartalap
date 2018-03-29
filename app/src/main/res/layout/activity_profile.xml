@@ -1,213 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/graylight"
-    android:orientation="vertical">
+     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_img"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
 
     <LinearLayout
+        android:id="@+id/profile_overlay"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="405dp">
-            <LinearLayout
-                android:background="@drawable/gradientbackground"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_marginTop="45dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:background="@drawable/circle"
-                    android:src="@drawable/logo"/>
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wiliam Snoe"
-                    android:textColor="#fff"
-                    android:textStyle="bold"
-                    android:textSize="21sp"/>
-            </LinearLayout>
-            <android.support.v7.widget.CardView
-                android:layout_width="400dp"
-                android:layout_height="120dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="275dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="3">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Photos"
-                            android:textSize="20sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="125"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:paddingTop="10dp"
-                            android:textColor="@color/startblue"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_overlay_gradient"
+        app:layout_constraintTop_toTopOf="@+id/profile_pic"
+        android:orientation="vertical" />
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Followers"
-                            android:textSize="20sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1205"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:paddingTop="10dp"
-                            android:textColor="@color/startblue"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Razz Singh"
+        android:textAllCaps="true"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_overlay"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Following"
-                            android:textSize="20sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="360"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:paddingTop="10dp"
-                            android:textColor="@color/startblue"/>
+    <TextView
+        android:id="@+id/tv_age_state_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="24years, Uttar Pradesh, India"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
-                    </LinearLayout>
-                </LinearLayout>
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="+91925872530"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:textColor="@color/cardview_light_background"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age_state_city"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
-            </android.support.v7.widget.CardView>
-        </RelativeLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="My rule was yesterday, it is still today and it will be tomorrow too, calendar is not my attitude which does not change with the years "
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:textColor="#fafafa"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/id"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#0000"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_overlay"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="45dp">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:paddingLeft="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/rounded_rectangle_green"/>
-                <TextView
-                    android:textStyle="bold"
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Wiliam@gmail.com"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal"
-                android:paddingLeft="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/rounded_rectangle_green"/>
-                <TextView
-                    android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
 
-                    android:layout_gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="+266 225 225"/>
-            </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal"
-                android:paddingLeft="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/rounded_rectangle_green"/>
-                <TextView
-                    android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
-                    android:layout_gravity="center_vertical"
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Add to group"/>
+                    android:text="Posts"
+                    android:textColor="#e6570f"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="#f8f8fa"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="25dp"
-                android:orientation="horizontal"
-                android:paddingLeft="25dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/rounded_rectangle_green"/>
-                <TextView
-                    android:textStyle="bold"
 
-                    android:layout_gravity="center_vertical"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="20dp"
-                    android:text="Show all comments"/>
+                    android:text="Friends"
+                    android:textColor="#e6570f"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="#f8f8fa"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groups"
+                    android:textColor="#e6570f"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="0"
+                    android:textColor="#f8f8fa"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:textColor="#fff"
-            android:background="@drawable/rounded_rectangle_orange"
-            android:layout_marginTop="35dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Follow Me"
-            android:layout_marginBottom="35dp"/>
+    </android.support.v7.widget.CardView>
 
-    </LinearLayout>
-</ScrollView>
+</android.support.constraint.ConstraintLayout>
