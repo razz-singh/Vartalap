@@ -19,6 +19,7 @@
             tools:layout_editor_absoluteX="0dp">
 
             <LinearLayout
+                android:id="@+id/capture_btn_container"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -31,6 +32,16 @@
                     android:layout_height="50dp"
                     android:src="@drawable/camera" />
             </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/captured_img_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_img"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                />
 
         </LinearLayout>
 
@@ -61,6 +72,7 @@
                 android:textSize="14sp" />
 
             <EditText
+                android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter your Name here"
@@ -96,6 +108,7 @@
                     android:textSize="14sp" />
 
                 <EditText
+                    android:id="@+id/et_status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your status here"
@@ -131,6 +144,7 @@
                     android:textSize="14sp" />
 
                 <EditText
+                    android:id="@+id/et_age"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your age here"
@@ -166,6 +180,7 @@
                     android:textSize="14sp" />
 
                 <EditText
+                    android:id="@+id/et_state"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your State here"
@@ -201,6 +216,7 @@
                     android:textSize="14sp" />
 
                 <EditText
+                    android:id="@+id/et_country"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your country here"

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "397967199401-eaqd28tnuqho18a3ejcf24ijtpkduf4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brainzerstech.vartalap",
+            "certificate_hash": "289fa9b3aab13e7d43dfe4cfee695d3883161889"
+          }
+        },
+        {
           "client_id": "397967199401-30ocicc9b9b6q30ennac3m77p91cdb40.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397967199401-30ocicc9b9b6q30ennac3m77p91cdb40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
