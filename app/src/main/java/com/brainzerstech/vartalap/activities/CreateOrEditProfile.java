@@ -36,7 +36,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.squareup.picasso.Picasso;
+//import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -164,8 +164,8 @@ public class CreateOrEditProfile extends AppCompatActivity {
 
             llCaptureBtnContainer.setVisibility(View.GONE);
             ivCapturedImgPreview.setVisibility(View.VISIBLE);
-            Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
-            ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
+//            Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
+//            ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
         }
 
     }
