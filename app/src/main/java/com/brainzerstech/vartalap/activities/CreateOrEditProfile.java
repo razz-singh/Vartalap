@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -36,6 +37,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 //import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
@@ -55,15 +57,21 @@ public class CreateOrEditProfile extends AppCompatActivity {
     private int MY_PERMISSIONS_REQUEST_CAMERA = 2;
     String mCurrentPhotoPath;
     private Drawable capturedImgDrawable;
-    private static Uri photoURI;
+    private static Uri photoURI, downloadUrl;
     DatabaseReference dbRef;
-    Uri downloadUrl;
+    EditText etName, etAge, etState, etCountry, etStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_or_edit_profile);
         context=this;
+        etName = findViewById(R.id.et_name);
+        etAge = findViewById(R.id.et_age);
+        etState = findViewById(R.id.et_state);
+        etCountry = findViewById(R.id.et_country);
+        etStatus = findViewById(R.id.et_status);
+
         ivCapture = findViewById(R.id.capture);
         ivCapturedImgPreview = findViewById(R.id.captured_img_preview);
         llProfilePic = findViewById(R.id.ll_profile_pic);
@@ -164,8 +172,8 @@ public class CreateOrEditProfile extends AppCompatActivity {
 
             llCaptureBtnContainer.setVisibility(View.GONE);
             ivCapturedImgPreview.setVisibility(View.VISIBLE);
-//            Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
-//            ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
+            Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
+            ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
         }
 
     }
@@ -200,6 +208,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_save_profile) {
             saveDataToFireDB();
+            startActivity(new Intent(CreateOrEditProfile.this, ProfileActivity.class));
             return true;
         }
 
@@ -211,13 +220,9 @@ public class CreateOrEditProfile extends AppCompatActivity {
         FirebaseStorage storage = FirebaseStorage.getInstance("gs://phoneauth-4fd5e.appspot.com/");
         // Create a storage reference from our app
         StorageReference storageRef = storage.getReference();
-        // Create a child reference
-// imagesRef now points to "images"
-        StorageReference imagesRef = storageRef.child("PROFILE_PICS");
-
-// Child references can also take paths
-// spaceRef now points to "images/space.jpg
-// imagesRef still points to "images"
+        // Child references can also take paths
+        // spaceRef now points to "images/space.jpg
+        // imagesRef still points to "images"
         StorageReference spaceRef = storageRef.child("PROFILE_PICS/"+new File(photoURI.getPath()).getName());
         // Get the data from an ImageView as bytes
         ivCapturedImgPreview.setDrawingCacheEnabled(true);
@@ -238,21 +243,20 @@ public class CreateOrEditProfile extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                 downloadUrl = taskSnapshot.getDownloadUrl();
+
+
+                String token = FirebaseInstanceId.getInstance().getToken();
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                dbRef= database.getReference("VUsers");
+                String currentUser = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
+                dbRef.child(currentUser).child("vUserToken").setValue(token);
+                dbRef.child(currentUser).child("vAvtarUrl").setValue(downloadUrl.toString());
+                dbRef.child(currentUser).child("VUserName").setValue(etName.getText().toString());
+                dbRef.child(currentUser).child("vUserAge").setValue(etAge.getText().toString());
+                dbRef.child(currentUser).child("vUserState").setValue(etState.getText().toString());
+                dbRef.child(currentUser).child("vUserCountry").setValue(etCountry.getText().toString());
+                dbRef.child(currentUser).child("vUserStatus").setValue(etStatus.getText().toString());
             }
         });
-
-
-
-
-        String token = FirebaseInstanceId.getInstance().getToken();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        dbRef= database.getReference("VUsers");
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserToken").setValue(FirebaseInstanceId.getInstance().getToken());
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vAvtarUrl").setValue(downloadUrl);
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("VUserName").setValue(findViewById(R.id.et_name));
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserAge").setValue(findViewById(R.id.et_age));
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserState").setValue(findViewById(R.id.et_state));
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserCountry").setValue(findViewById(R.id.et_country));
-        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserStatus").setValue(findViewById(R.id.et_status));
     }
 }
