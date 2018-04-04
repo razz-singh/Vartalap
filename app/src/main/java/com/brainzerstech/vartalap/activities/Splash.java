@@ -33,30 +33,39 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    if (FirebaseAuth.getInstance().getCurrentUser() != null){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (FirebaseAuth.getInstance().getCurrentUser() != null){
+
+                    SharedPreferences prefs = getSharedPreferences(getString(R.string.shared_pref_name),MODE_PRIVATE);
+                    boolean isProfileCreated = prefs.getBoolean(getString(R.string.is_profile_created), false);
+
+                    if (isProfileCreated){
+                        startActivity(new Intent(Splash.this, TabbedActivity.class));
+                    }
+                    else{
                         /*Insert data to database*/
                         FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference myRef = database.getReference("VUsers");
                         myRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserToken").setValue(FirebaseInstanceId.getInstance().getToken());
                         startActivity(new Intent(Splash.this, CreateOrEditProfile.class));
-                        finish();
                     }
-                    else{
-                        startActivityForResult(
-                                AuthUI.getInstance()
-                                        .createSignInIntentBuilder()
-                                        .setAvailableProviders(Arrays.asList(
-                                                new AuthUI.IdpConfig.Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()))
-                                        .build(),
-                                RC_SIGN_IN);
-                    }
+                    finish();
+
                 }
-            },1000);
-
-
+                else{
+                    startActivityForResult(
+                            AuthUI.getInstance()
+                                    .createSignInIntentBuilder()
+                                    .setAvailableProviders(Arrays.asList(
+                                            new AuthUI.IdpConfig.Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()))
+                                    .build(),
+                            RC_SIGN_IN
+                    );
+                }
+            }
+        },1000);
 
     }
 }

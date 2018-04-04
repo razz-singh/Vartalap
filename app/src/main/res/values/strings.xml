@@ -24,4 +24,6 @@
     <string name="font_fontFamily_medium">Halvetica</string>
     <string name="action_logout">Logout</string>
     <string name="profile_created">false</string>
+    <string name="is_profile_created">profile_created</string>
+    <string name="shared_pref_name">brainzerstech_vartalap_shared_preferences</string>
 </resources>

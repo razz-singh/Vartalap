@@ -7,12 +7,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.media.ExifInterface;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
@@ -171,17 +175,18 @@ public class CreateOrEditProfile extends AppCompatActivity {
                 capturedImgDrawable = getResources().getDrawable(R.drawable.profile_img);
             }
 
-//            Bundle extras = data.getExtras();
-//            Bitmap imageBitmap = (Bitmap) extras.get("data");
+
 
 
             llCaptureBtnContainer.setVisibility(View.GONE);
             ivCapturedImgPreview.setVisibility(View.VISIBLE);
             Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
             ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
+            setImageRotation();
         }
 
     }
+
     private File createImageFile() throws IOException {
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
@@ -214,6 +219,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
         if (id == R.id.action_save_profile) {
             saveDataToFireDB();
             startActivity(new Intent(CreateOrEditProfile.this, ProfileActivity.class));
+            finish();
             return true;
         }
 
@@ -262,6 +268,11 @@ public class CreateOrEditProfile extends AppCompatActivity {
                 dbRef.child(currentUser).child("vUserCountry").setValue(etCountry.getText().toString());
                 dbRef.child(currentUser).child("vUserStatus").setValue(etStatus.getText().toString());
 
+                SharedPreferences sharedPref = getSharedPreferences(getString(R.string.shared_pref_name),MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putBoolean(getString(R.string.is_profile_created), true);
+                editor.apply();
+
             }
         });
     }
@@ -286,4 +297,43 @@ public class CreateOrEditProfile extends AppCompatActivity {
             }
         });*/
     }
+    void setImageRotation(){
+        /*ExifInterface ei = null;
+        Bitmap bitmap = null;
+        try {
+            ei = new ExifInterface(photoURI.toString());
+            bitmap = capturedImgDrawable.getBitmap();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int orientation = ei.getAttributeInt(ExifInterface.TAG_ORIENTATION,
+                ExifInterface.ORIENTATION_UNDEFINED);
+        
+        Bitmap rotatedBitmap = null;
+        switch(orientation) {
+
+            case ExifInterface.ORIENTATION_ROTATE_90:
+                rotatedBitmap = rotateImage(bitmap, 90);
+                break;
+
+            case ExifInterface.ORIENTATION_ROTATE_180:
+                rotatedBitmap = rotateImage(bitmap, 180);
+                break;
+
+            case ExifInterface.ORIENTATION_ROTATE_270:
+                rotatedBitmap = rotateImage(bitmap, 270);
+                break;
+
+            case ExifInterface.ORIENTATION_NORMAL:
+            default:
+                rotatedBitmap = bitmap;
+        }*/
+    }
+    public static Bitmap rotateImage(Bitmap source, float angle) {
+        Matrix matrix = new Matrix();
+        matrix.postRotate(angle);
+        return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(),
+                matrix, true);
+    }
+
 }
