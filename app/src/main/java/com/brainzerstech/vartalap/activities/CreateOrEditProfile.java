@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -31,8 +32,11 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -60,6 +64,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
     private static Uri photoURI, downloadUrl;
     DatabaseReference dbRef;
     EditText etName, etAge, etState, etCountry, etStatus;
+    String currentUser = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -248,7 +253,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
                 String token = FirebaseInstanceId.getInstance().getToken();
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 dbRef= database.getReference("VUsers");
-                String currentUser = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
+
                 dbRef.child(currentUser).child("vUserToken").setValue(token);
                 dbRef.child(currentUser).child("vAvtarUrl").setValue(downloadUrl.toString());
                 dbRef.child(currentUser).child("VUserName").setValue(etName.getText().toString());
@@ -256,7 +261,29 @@ public class CreateOrEditProfile extends AppCompatActivity {
                 dbRef.child(currentUser).child("vUserState").setValue(etState.getText().toString());
                 dbRef.child(currentUser).child("vUserCountry").setValue(etCountry.getText().toString());
                 dbRef.child(currentUser).child("vUserStatus").setValue(etStatus.getText().toString());
+
             }
         });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        /*dbRef= FirebaseDatabase.getInstance().getReference("VUsers").child(currentUser).child("vAvtarUrl");
+        dbRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String profileImg = (String) dataSnapshot.getValue();
+                if (profileImg.length()>0){
+                    startActivity(new Intent(CreateOrEditProfile.this, ProfileActivity.class));
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });*/
     }
 }

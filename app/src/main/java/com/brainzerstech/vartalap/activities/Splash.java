@@ -1,6 +1,9 @@
 package com.brainzerstech.vartalap.activities;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,30 +28,34 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+    }
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (FirebaseAuth.getInstance().getCurrentUser() != null){
+    @Override
+    protected void onResume() {
+        super.onResume();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (FirebaseAuth.getInstance().getCurrentUser() != null){
+                        /*Insert data to database*/
+                        FirebaseDatabase database = FirebaseDatabase.getInstance();
+                        DatabaseReference myRef = database.getReference("VUsers");
+                        myRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserToken").setValue(FirebaseInstanceId.getInstance().getToken());
+                        startActivity(new Intent(Splash.this, CreateOrEditProfile.class));
+                        finish();
+                    }
+                    else{
+                        startActivityForResult(
+                                AuthUI.getInstance()
+                                        .createSignInIntentBuilder()
+                                        .setAvailableProviders(Arrays.asList(
+                                                new AuthUI.IdpConfig.Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()))
+                                        .build(),
+                                RC_SIGN_IN);
+                    }
+                }
+            },1000);
 
-                    /*Insert data to database*/
-                    FirebaseDatabase database = FirebaseDatabase.getInstance();
-                    DatabaseReference myRef = database.getReference("VUsers");
-                    myRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("vUserToken").setValue(FirebaseInstanceId.getInstance().getToken());
-                    startActivity(new Intent(Splash.this, CreateOrEditProfile.class));
-                    finish();
-                }
-                else{
-                    startActivityForResult(
-                            AuthUI.getInstance()
-                                    .createSignInIntentBuilder()
-                                    .setAvailableProviders(Arrays.asList(
-                                            new AuthUI.IdpConfig.Builder(AuthUI.PHONE_VERIFICATION_PROVIDER).build()))
-                                    .build(),
-                            RC_SIGN_IN);
-                }
-            }
-        },2000);
 
 
     }
