@@ -68,7 +68,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
     private static Uri photoURI, downloadUrl;
     DatabaseReference dbRef;
     EditText etName, etAge, etState, etCountry, etStatus;
-    String currentUser = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
+    String currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -181,8 +181,6 @@ public class CreateOrEditProfile extends AppCompatActivity {
             llCaptureBtnContainer.setVisibility(View.GONE);
             ivCapturedImgPreview.setVisibility(View.VISIBLE);
             Picasso.get().load(photoURI.toString()).into(ivCapturedImgPreview);
-            ivCapturedImgPreview.setImageDrawable(capturedImgDrawable);
-            setImageRotation();
         }
 
     }
@@ -254,8 +252,7 @@ public class CreateOrEditProfile extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                 downloadUrl = taskSnapshot.getDownloadUrl();
-
-
+                currentUser = FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber();
                 String token = FirebaseInstanceId.getInstance().getToken();
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 dbRef= database.getReference("VUsers");
@@ -280,60 +277,6 @@ public class CreateOrEditProfile extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        /*dbRef= FirebaseDatabase.getInstance().getReference("VUsers").child(currentUser).child("vAvtarUrl");
-        dbRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String profileImg = (String) dataSnapshot.getValue();
-                if (profileImg.length()>0){
-                    startActivity(new Intent(CreateOrEditProfile.this, ProfileActivity.class));
-                    finish();
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });*/
-    }
-    void setImageRotation(){
-        /*ExifInterface ei = null;
-        Bitmap bitmap = null;
-        try {
-            ei = new ExifInterface(photoURI.toString());
-            bitmap = capturedImgDrawable.getBitmap();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int orientation = ei.getAttributeInt(ExifInterface.TAG_ORIENTATION,
-                ExifInterface.ORIENTATION_UNDEFINED);
-        
-        Bitmap rotatedBitmap = null;
-        switch(orientation) {
-
-            case ExifInterface.ORIENTATION_ROTATE_90:
-                rotatedBitmap = rotateImage(bitmap, 90);
-                break;
-
-            case ExifInterface.ORIENTATION_ROTATE_180:
-                rotatedBitmap = rotateImage(bitmap, 180);
-                break;
-
-            case ExifInterface.ORIENTATION_ROTATE_270:
-                rotatedBitmap = rotateImage(bitmap, 270);
-                break;
-
-            case ExifInterface.ORIENTATION_NORMAL:
-            default:
-                rotatedBitmap = bitmap;
-        }*/
-    }
-    public static Bitmap rotateImage(Bitmap source, float angle) {
-        Matrix matrix = new Matrix();
-        matrix.postRotate(angle);
-        return Bitmap.createBitmap(source, 0, 0, source.getWidth(), source.getHeight(),
-                matrix, true);
     }
 
 }
