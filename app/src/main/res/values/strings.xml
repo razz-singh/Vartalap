@@ -26,4 +26,5 @@
     <string name="profile_created">false</string>
     <string name="is_profile_created">profile_created</string>
     <string name="shared_pref_name">brainzerstech_vartalap_shared_preferences</string>
+    <string name="please_add_a_friend_to_start_chat_and_call">Please add a friend to start chat and call</string>
 </resources>

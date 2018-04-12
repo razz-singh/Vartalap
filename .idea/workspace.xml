@@ -222,21 +222,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Splash.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/Splash.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateOrEditProfile.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreateOrEditProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/CreateOrEditProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+            <state relative-caret-position="187">
+              <caret line="254" column="91" lean-forward="false" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="91" />
               <folding>
                 <element signature="e#12067#12068#0" expanded="true" />
                 <element signature="e#12099#12100#0" expanded="true" />
@@ -245,51 +235,102 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_create_or_edit_profile.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_create_or_edit_profile.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="188" column="16" lean-forward="false" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
+      <file leaf-file-name="TabbedActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/TabbedActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="93" column="115" lean-forward="false" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2">
+        </entry>
+      </file>
+      <file leaf-file-name="activity_tabbed.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="48" column="54" lean-forward="false" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="ChatFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="262">
+              <caret line="107" column="74" lean-forward="false" selection-start-line="107" selection-start-column="74" selection-end-line="107" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FriendListAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/Adapters/FriendListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="64" column="10" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
               <folding>
-                <element signature="e#578#596#0" expanded="true" />
-                <element signature="e#2248#2279#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1076#1077#0" expanded="true" />
+                <element signature="e#1133#1134#0" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-manifest">
+        </entry>
+      </file>
+      <file leaf-file-name="CircleTransform.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/utilities/CircleTransform.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="friend_list_cell.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/friend_list_cell.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/ProfileActivity.java">
+      <file leaf-file-name="Friends.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/Friends.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="44" column="54" lean-forward="false" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+            <state relative-caret-position="77">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_profile.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
+      <file leaf-file-name="fragment_chat.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_chat.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <element signature="e#650#702#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -302,9 +343,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -317,7 +358,6 @@
       <find>MY_PERMISSIONS_REQUEST_READ_CONTACTS</find>
       <find>photoFile</find>
       <find>MY_PERMISSIONS_WRITE_EXTERNAL_STORAGE</find>
-      <find>dbRef</find>
       <find>ProfileA</find>
       <find>Profileac</find>
       <find>tv_age_state_city</find>
@@ -325,6 +365,9 @@
       <find>bitmap</find>
       <find>photoURI</find>
       <find>currentUser</find>
+      <find>dbRef</find>
+      <find>fab</find>
+      <find>tvNoFriend</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -2384,15 +2427,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/rounded_rectangle_green.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_tab.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/splash_gradient.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_tabbed.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/TabbedActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/VUsers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/Users.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/gradientbackground.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/buttonstyle.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/profile_overlay_gradient.xml" />
@@ -2409,6 +2449,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/CreateOrEditProfile.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_create_or_edit_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/TabbedActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_chat.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/friend_list_cell.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/utilities/CircleTransform.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/Adapters/FriendListAdapter.java" />
       </list>
     </option>
   </component>
@@ -2432,7 +2479,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2440,12 +2486,35 @@
               <item name="Vartalap" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
+            <path>
+              <item name="Vartalap" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="Vartalap" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="vartalap" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Vartalap" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Vartalap" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -2870,17 +2939,17 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32352942" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7663399" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12934947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35779122" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46895424" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39542484" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4978701" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2970,30 +3039,6 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
-          <line>88</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/CreateOrEditProfile.java</url>
           <line>253</line>
           <properties />
@@ -3065,13 +3110,35 @@
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
-          <line>83</line>
-          <properties method="onDataChange">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="15" />
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/CreateOrEditProfile.java</url>
@@ -3090,79 +3157,65 @@
           <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="119" />
+      <option name="time" value="131" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>users.getKey().equals(&quot;friends&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users.getKey().toString().equals(&quot;friends&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users.getValue().toString().equals(&quot;friends&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users.getValue().equals(&quot;friends&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users.getValue().</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>users</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataSnapshot.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>dataSnapshot</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tvNoFriend.getVisibility()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/org/json/JSONObject.class" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/Friends.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="79" column="11" lean-forward="false" selection-start-line="79" selection-start-column="11" selection-end-line="79" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/buttonstyle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/gradientbackground.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/camera.svg" />
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-26/android.jar!/android/content/Intent.class" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/profile_overlay_gradient.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/CallFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/provider_paths.xml" />
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_tabbed.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3211,7 +3264,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3220,13 +3272,6 @@
         <state relative-caret-position="60">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/TabbedActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1519">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -3277,18 +3322,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35513">
           <caret line="2144" column="0" lean-forward="false" selection-start-line="2144" selection-start-column="0" selection-end-line="2144" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="510">
           <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#578#596#0" expanded="true" />
-            <element signature="e#2248#2279#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-manifest">
@@ -3297,7 +3338,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/Splash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="0">
           <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="40" />
           <folding />
         </state>
@@ -3305,7 +3346,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/ProfileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="510">
           <caret line="44" column="54" lean-forward="false" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           <folding />
         </state>
@@ -3313,7 +3354,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_create_or_edit_profile.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="3196">
           <caret line="188" column="16" lean-forward="false" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="16" />
           <folding />
         </state>
@@ -3322,14 +3363,308 @@
         <state />
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/d949ab13cf20a7a963fb5e99f1c442e0/jars/classes.jar!/com/google/firebase/database/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <marker date="1522697710246" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522697710246" expanded="false" signature="152:1162" ph="..." />
+            <marker date="1522697710246" expanded="true" signature="1425:1641" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="1677:1790" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="1832:2908" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="2950:3177" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3208:3480" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3511:3645" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3724:3818" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3897:3991" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4065:4153" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4216:4421" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4484:4689" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4730:4811" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4852:4933" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="4976:5210" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="5249:5260" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="5300:5306" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="5345:5356" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="5396:5402" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="5442:5453" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="5493:5499" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="5552:5684" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="5737:5805" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="5859:5927" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="5982:6538" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="6575:6586" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="6624:6630" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="6667:6678" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="6716:6722" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="6760:6771" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="6809:6815" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="6866:6998" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="7049:7117" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="7169:7237" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="7292:7896" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="7936:8010" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8050:8124" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8165:8239" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8292:8378" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8431:8517" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8571:8657" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="8699:9070" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="9111:9482" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="9527:11049" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="11086:11238" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="11270:11422" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="11456:11562" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="11601:11612" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="11661:11667" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="11707:11718" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="11734:11740" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="11780:11791" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="11828:11834" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/d949ab13cf20a7a963fb5e99f1c442e0/jars/classes.jar!/com/google/android/gms/internal/zzeng.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+          <folding>
+            <marker date="1522697710246" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522697710246" expanded="false" signature="155:261" ph="..." />
+            <marker date="1522697710246" expanded="true" signature="546:628" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="691:773" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="804:1615" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="1656:1667" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1703:1709" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1762:1773" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1802:1808" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1838:1849" ph=" { " />
+            <marker date="1522697710246" expanded="true" signature="1865:1871" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1917:2020" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="2061:2154" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="2207:2770" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="2810:2821" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="2878:2884" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="2915:3272" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3303:3660" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="3725:4186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/d949ab13cf20a7a963fb5e99f1c442e0/jars/classes.jar!/com/google/android/gms/internal/zzene.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="70" column="31" lean-forward="false" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+          <folding>
+            <marker date="1522697710246" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522697710246" expanded="false" signature="155:204" ph="..." />
+            <marker date="1522697710246" expanded="true" signature="335:342" ph="{}" />
+            <marker date="1522697710246" expanded="false" signature="373:384" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="395:401" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="433:444" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="457:463" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="493:504" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="516:522" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="562:573" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="585:591" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="631:642" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="654:660" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="713:876" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="929:1248" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="1290:1301" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1314:1320" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1351:1362" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1374:1380" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1408:1419" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1428:1434" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1465:1476" ph=" { " />
+            <marker date="1522697710246" expanded="true" signature="1488:1494" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1537:1548" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1560:1566" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1606:1617" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1629:1635" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1666:1677" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1687:1693" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1734:1745" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1755:1761" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1806:1817" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1859:1865" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1905:1916" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1958:1964" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="2002:2013" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="2039:2045" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="2092:2486" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="2519:2530" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="2539:2545" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="2581:2592" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="2614:2620" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.0.aar/d949ab13cf20a7a963fb5e99f1c442e0/jars/classes.jar!/com/google/firebase/database/DataSnapshot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding>
+            <marker date="1522697710246" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522697710246" expanded="false" signature="152:445" ph="..." />
+            <marker date="1522697710246" expanded="true" signature="599:656" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="701:877" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="920:1115" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="1149:1160" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1192:1198" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1227:1238" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1266:1272" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1316:1327" ph=" { " />
+            <marker date="1522697710246" expanded="true" signature="1355:1361" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1417:1428" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1460:1466" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1522:1533" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1578:1584" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1656:1717" ph="{...}" />
+            <marker date="1522697710246" expanded="false" signature="1753:1764" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1798:1804" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1843:1854" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1870:1876" ph=" }" />
+            <marker date="1522697710246" expanded="false" signature="1904:1915" ph=" { " />
+            <marker date="1522697710246" expanded="false" signature="1940:1946" ph=" }" />
+            <marker date="1522697710246" expanded="true" signature="1996:2084" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="2118:2242" ph="{...}" />
+            <marker date="1522697710246" expanded="true" signature="2273:2592" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/view/accessibility/AccessibilityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="256" column="0" lean-forward="false" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
+          <folding>
+            <element signature="e#9041#9042#0" expanded="false" />
+            <element signature="e#9097#9098#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-27/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="18815" column="0" lean-forward="false" selection-start-line="18815" selection-start-column="0" selection-end-line="18815" selection-end-column="0" />
+          <folding>
+            <element signature="e#507723#507724#0" expanded="false" />
+            <element signature="e#507750#507751#0" expanded="false" />
+            <element signature="e#508682#508683#0" expanded="false" />
+            <element signature="e#508710#508711#0" expanded="false" />
+            <element signature="e#594419#594420#0" expanded="false" />
+            <element signature="e#594460#594461#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-27/data/res/drawable-hdpi/ic_dialog_email.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tabbed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="48" column="54" lean-forward="false" selection-start-line="48" selection-start-column="54" selection-end-line="48" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/CreateOrEditProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="254" column="91" lean-forward="false" selection-start-line="254" selection-start-column="30" selection-end-line="254" selection-end-column="91" />
           <folding>
             <element signature="e#12067#12068#0" expanded="true" />
             <element signature="e#12099#12100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/pojos/Friends.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/activities/TabbedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="93" column="115" lean-forward="false" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_chat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#650#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/friend_list_cell.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/utilities/CircleTransform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/Adapters/FriendListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="64" column="10" lean-forward="false" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1076#1077#0" expanded="true" />
+            <element signature="e#1133#1134#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/brainzerstech/vartalap/fragments/ChatFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="107" column="74" lean-forward="false" selection-start-line="107" selection-start-column="74" selection-end-line="107" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#fcfcfc"
+    android:layout_margin="2dp">
+<ImageView
+    android:id="@+id/iv_flist_dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:src="@drawable/profile_img"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/tv_flist_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:lines="1"
+        android:text="Title"
+        />
+    <TextView
+        android:id="@+id/tv_flist_status"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:lines="1"
+        android:text="Status"
+        />
+</LinearLayout>
+</LinearLayout>

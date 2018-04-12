@@ -29,6 +29,9 @@ import com.brainzerstech.vartalap.fragments.GroupFragment;
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,10 +83,21 @@ public class TabbedActivity extends AppCompatActivity implements
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                addFriend(view);
             }
         });
+    }
+
+    private void addFriend(View view) {
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference dbRef= database.getReference("VUsers");
+        dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber()).child("friends").push().setValue("+919258725330");
+        Snackbar.make(view,"You have created new friend +919540456169",Snackbar.LENGTH_LONG).setAction("", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        }).show();
     }
 
     @Override

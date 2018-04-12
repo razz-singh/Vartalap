@@ -8,7 +8,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
 
+import com.brainzerstech.vartalap.Adapters.FriendListAdapter;
 import com.brainzerstech.vartalap.R;
 import com.brainzerstech.vartalap.pojos.Friends;
 import com.google.firebase.auth.FirebaseAuth;
@@ -44,6 +47,10 @@ public class ChatFragment extends Fragment {
     private ArrayList<Friends> friendsArrayList = new ArrayList<>();
     private ArrayList<Friends> userList = new ArrayList<>();
     private DatabaseReference dbRef;
+    private TextView tvNoFriend;
+    private ArrayList<String> friendsList= new ArrayList<>();
+    private ListView lvFriendList;
+    private FriendListAdapter flistAdapter;
 
     public ChatFragment() {
         // Required empty public constructor
@@ -74,19 +81,39 @@ public class ChatFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
 
-
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_chat, container, false);
+        tvNoFriend = (TextView) view.findViewById(R.id.tv_no_friend);
+        lvFriendList = view.findViewById(R.id.lv_friends_list);
+        flistAdapter = new FriendListAdapter(getActivity(),friendsList);
+        lvFriendList.setAdapter(flistAdapter);
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        dbRef= database.getReference("Users");
+        dbRef= database.getReference("VUsers");
         Query mQueryRef = dbRef.child(FirebaseAuth.getInstance().getCurrentUser().getPhoneNumber());
         mQueryRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                for (DataSnapshot users : dataSnapshot.getChildren()){
-
-                    Log.d("Value:", "Value is: " + users);
+                if(dataSnapshot.getValue()== null){
+                    tvNoFriend.setVisibility(View.VISIBLE);
+                }
+                else{
+                    lvFriendList.setVisibility(View.VISIBLE);
+                    for (DataSnapshot users : dataSnapshot.getChildren()){
+                        if (users.getKey().equals("friends")){
+                           for (DataSnapshot friends: users.getChildren()){
+                                friendsList.add(friends.getValue().toString());
+                            }
+                            flistAdapter.notifyDataSetChanged();
+                        }
+                        Log.d("Value:", "Value is: " + users);
+                    }
                 }
 
                 Log.d("Value:", "Value is: " + "");
@@ -98,13 +125,8 @@ public class ChatFragment extends Fragment {
                 Log.w("Error:", "Failed to read value.", error.toException());
             }
         });
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
